@@ -4,9 +4,8 @@ fun main() {
         val o = a.clone()
         qs(a)
         if (!validate(a)) {
-            println("Error: ${o.joinToString()}")
-            println("Error: ${a.joinToString()}")
-            
+            println("Bad Result    : ${o.joinToString()}")
+            println("Original Array: ${a.joinToString()}")
         }
     }
 }
@@ -28,7 +27,7 @@ fun qs(arr: IntArray, left: Int = 0, right: Int = arr.size - 1) {
     var r = right
 
     while (l <= r) {
-	    while (arr[l] < pivot) ++l
+	while (arr[l] < pivot) ++l
     	while (arr[r] > pivot) --r
     
         if (l <= r) {
