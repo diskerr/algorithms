@@ -1,4 +1,3 @@
-// HARD라고 하기엔 좀 민망한 난이도.. 시키는 대로 하면 됨.
 class Solution {
     fun fullJustify(words: Array<String>, maxWidth: Int): List<String> {
         val n = words.size
