@@ -1,5 +1,4 @@
 // O(n^3) 알고리즘. n <= 300이라 충분하고, 실제로 이 크기의 입력에선 유의미한 성능 차이 나지 않는 듯.
-// 이 문제는 그냥 기울기 공식 아는가 물어보는 문제 같음-_-; 그래놓고 HARD는 좀
 // class Solution {
 //     fun maxPoints(points: Array<IntArray>): Int {
 //         var result = 1
