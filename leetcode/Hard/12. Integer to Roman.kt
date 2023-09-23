@@ -1,4 +1,3 @@
-// 이것도 왜 HARD인지 잘.. 거스름돈(동전 교환) 문제처럼 간단한 그리디로 해결 가능
 class Solution {
     private val romanArray = arrayOf(
         1000 to "M",
