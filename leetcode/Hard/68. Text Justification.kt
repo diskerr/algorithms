@@ -28,7 +28,7 @@ class Solution {
                         if (denom < 2) remainedSpace else ceil(remainedSpace.toDouble() / denom).toInt()
                     }
                     
-                    for (i in 0..padding) append(" ")
+                    append(" ".repeat(padding))
 
                     remainedSpace -= padding
                 }
