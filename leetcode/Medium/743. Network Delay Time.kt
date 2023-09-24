@@ -42,7 +42,7 @@ class Solution {
         cost[0] = 0
         cost[k] = 0
 
-        val pq = PriorityQueue<Node>().apply { add(Node(k, 0)) }
+        val pq = PriorityQueue<Node>(n).apply { add(Node(k, 0)) }
 
         while (pq.isNotEmpty()) {
             val u = pq.remove().v
