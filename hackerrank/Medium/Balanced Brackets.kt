@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/balanced-brackets
+// https://www.hackerrank.com/challenges/balanced-brackets/problem
 import java.io.*
 import java.math.*
 import java.security.*
