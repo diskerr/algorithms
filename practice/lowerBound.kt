@@ -1,12 +1,16 @@
 // C++로 할 때는 std::lower_bound() 가 있었는데 Java나 Kotlin에는 없다. 가끔 필요할 때가 있는데 좀 아쉬운 부분.
 // 이번에 LeetCode 풀다가 필요해서 한번 만들어 봄.
-fun IntArray.lowerBound(value: Int): Int {
-    var left = 0
-    var right = size
+
+fun IntArray.lowerBound(value: Int): Int = lowerBound(arr = this, value = value)
+
+// 주로 이 버전이 필요할 때가 많다.
+fun lowerBound(arr: IntArray, l: Int = 0, r: Int = arr.size, value: Int): Int {
+    var left = l
+    var right = r
     
     while (left < right) {
         val mid = left + (right - left) / 2
-        if (this[mid] < value) left = mid + 1 else right = mid
+        if (arr[mid] < value) left = mid + 1 else right = mid
     }
     
     return left
