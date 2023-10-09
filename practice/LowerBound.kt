@@ -19,7 +19,7 @@ fun lowerBound(arr: IntArray, l: Int = 0, r: Int = arr.size, value: Int): Int {
 // 제네릭 버전. 당연히 LinkedList와 같이 상수 시간에 임의 접근이 안되는 List에선 O(N)이다. 
 // 이걸 interface RandomAccess 로 구분할 수 있긴 한데 굳이 막을 이유는 없다.
 // 그리고 JVM의 제네릭은 primitive type array가 안되는게 불편하다. 이유야 알겠지만.. 
-// 진짜 generic은 C++의 template이 훨씬 나은 것 같다.
+// 진짜 generic은 최소한 자유도 측면에서는 C++의 template이 훨씬 나은 것 같다.
 fun <T : Comparable<T>> List<T>.lowerBound(value: T): Int {
     var left = 0
     var right = size
