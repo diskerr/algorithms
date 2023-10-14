@@ -30,20 +30,14 @@ class Solution {
     
         for (i in 1 until k) {
             val next = cur.next
-            
+
             cur.next = prev
             prev = cur
             
-            if (next != null) {
-                cur = next
-            } else {
-                // end of the list
-                head.next = null
-                return prev
-            }
+            cur = next ?: break
         }
 
-        head.next = solve(cur, k)
+        head.next = if (prev == cur) null else solve(cur, k)
 
         return prev
     }
